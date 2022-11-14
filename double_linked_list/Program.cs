@@ -58,6 +58,18 @@ namespace double_linked_list
                 newNode.prev = null;
                 return;
             }
+            // if the node is to be inserted at between two node
+            Node previous, current;
+            for (current = previous = START; current != null && nim >= current.noMhs;
+                previous = current, current = current.next)
+            {
+                if (nim == current.noMhs)
+                {
+                    Console.WriteLine("\nDuplicate number not allowed ");
+                    return ;
+                }
+
+            }
         }
     }
 }
