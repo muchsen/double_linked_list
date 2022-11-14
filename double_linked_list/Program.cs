@@ -15,10 +15,7 @@ namespace double_linked_list
         //
         public Node prev;
 
-        static void Main(string[] args)
-        {
-
-        }
+        
     }
 
     class DoubleLinkedList
