@@ -185,7 +185,14 @@ namespace double_linked_list
                                 }
                                 Console.WriteLine("\nEnter the roll number of the student" +
                                     "whose record is to be deleted: ");
+                                int rollNo = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine();
+                                if (obj.dellNode(rollNo) == false)
+                                    Console.WriteLine("record not found");
+                                else
+                                    Console.WriteLine("Record with roll number " + rollNo + "deleted \n");
                             }
+                            break ;
                     }
                 }
             }
