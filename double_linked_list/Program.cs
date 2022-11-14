@@ -176,6 +176,16 @@ namespace double_linked_list
                                 obj.addNode();
                             }
                             break;
+                        case '2':
+                            {
+                                if (obj.listEmpty())
+                                {
+                                    Console.WriteLine("\nList is empty");
+                                    break;
+                                }
+                                Console.WriteLine("\nEnter the roll number of the student" +
+                                    "whose record is to be deleted: ");
+                            }
                     }
                 }
             }
