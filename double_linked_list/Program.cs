@@ -188,7 +188,7 @@ namespace double_linked_list
                                 int rollNo = Convert.ToInt32(Console.ReadLine());
                                 Console.WriteLine();
                                 if (obj.dellNode(rollNo) == false)
-                                    Console.WriteLine("record not found");
+                                    Console.WriteLine("Record not found");
                                 else
                                     Console.WriteLine("Record with roll number " + rollNo + "deleted \n");
                             }
@@ -215,7 +215,7 @@ namespace double_linked_list
                                 Console.WriteLine("\nEnter the roll number of the student whose record you want to search: ");
                                 int num = Convert.ToInt32(Console.ReadLine());
                                 if (obj.search(num, ref prev, ref curr) == false)
-                                    Console.WriteLine"\nRecord not found");
+                                    Console.WriteLine("\nRecord not found");
                                 else
                                 {
                                     Console.WriteLine("\nRecord found");
@@ -224,7 +224,18 @@ namespace double_linked_list
                                 }
                             }
                             break;
+                        case '6':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine("invalid option");
+                            }
+                            break;
                     }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Check for the values entered");
                 }
             }
         }
