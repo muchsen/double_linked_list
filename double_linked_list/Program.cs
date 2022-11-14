@@ -203,6 +203,27 @@ namespace double_linked_list
                                 obj.descending();
                             }
                             break;
+                        case '5':
+                            {
+                                if (obj.listEmpty() == true)
+                                {
+                                    Console.WriteLine("\nList empty");
+                                    break ;
+                                }
+                                Node prev, curr;
+                                prev = curr = null;
+                                Console.WriteLine("\nEnter the roll number of the student whose record you want to search: ");
+                                int num = Convert.ToInt32(Console.ReadLine());
+                                if (obj.search(num, ref prev, ref curr) == false)
+                                    Console.WriteLine"\nRecord not found");
+                                else
+                                {
+                                    Console.WriteLine("\nRecord found");
+                                    Console.WriteLine("\nRoll number: " + curr.noMhs);
+                                    Console.WriteLine("\nName: " + curr.name);
+                                }
+                            }
+                            break;
                     }
                 }
             }
