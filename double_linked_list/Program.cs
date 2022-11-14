@@ -109,7 +109,7 @@ namespace double_linked_list
                     START.prev = null;
                 return true;
             }
-            previous.next = current.next
+            previous.next = current.next;
             current.next = previous;
             return true;
         }
@@ -119,6 +119,18 @@ namespace double_linked_list
                 return true;
             else
                 return false;
+        }
+        public void ascending()
+        {
+            if (listEmpty())
+                Console.WriteLine("\nList is Empty");
+            else
+            {
+                Console.WriteLine("\nRecord in the asceding order of" + "roll number are:\n");
+                Node currentNode;
+                for (currentNode = START; currentNode != null; currentNode = currentNode.next)
+                    Console.WriteLine(currentNode.noMhs + "" + currentNode.name + "\n");
+            }
         }
     }
 }
