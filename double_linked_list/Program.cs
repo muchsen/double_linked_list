@@ -70,6 +70,20 @@ namespace double_linked_list
                 }
 
             }
+            //on the exectuion of the above for loop prev and
+            newNode.next = current;
+            newNode.prev = previous;
+            
+            //if the node
+            if (current == null)
+            {
+                newNode.next = null;
+                previous.next = newNode;
+                return ;
+            }
+            current.prev = newNode;
+            previous.prev = newNode;
         }
+        
     }
 }
